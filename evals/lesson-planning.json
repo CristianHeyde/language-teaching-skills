@@ -1,0 +1,47 @@
+{
+  "skill_name": "lesson-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Planeje uma aula B1 de 50 minutos sobre recomendar um lugar da cidade. Na aula anterior trabalhamos comparativos, mas não tenho registro de presença nem os materiais daquela aula. Quero o material do aluno e um guia para o professor.",
+      "expected_output": "A 50-minute lesson proposal with student materials, timed stages selected for the goal, a transition, a formative check, expected answers, and feasible homework; treats prior comparatives as supplied context without assuming attendance or specific materials from that lesson.",
+      "files": [],
+      "assertions": [
+        "Labels the output as a proposed 50-minute B1 lesson.",
+        "Separates student materials from the teacher guide.",
+        "Includes timed stages that add up to 50 minutes.",
+        "Includes an explicit transition between lesson stages.",
+        "Includes expected answers or observable criteria and a feasible homework task.",
+        "Does not claim that students attended or invent specific materials or activities from the previous lesson."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Prepara una clase de inglés de 40 minutos para estudiantes A2 sobre pedir y dar indicaciones para llegar a un museo. La clase es presencial, con grupos de tres. Quiero las instrucciones para estudiantes en español y la guía docente en español.",
+      "expected_output": "A 40-minute in-person A2 lesson proposal in Spanish about asking for and giving directions to a museum, for groups of three, with timed stages, communicative practice, and observable evidence of learning.",
+      "files": [],
+      "assertions": [
+        "Responds in Spanish in both the student materials and teacher guide.",
+        "Keeps the focus on asking for and giving directions to a museum.",
+        "Adapts the lesson to A2, in-person teaching, and groups of three.",
+        "Presents timed stages that add up to 40 minutes.",
+        "Includes communicative practice and an observable learning check.",
+        "Presents the plan as a proposal and does not claim the lesson already happened."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Crie uma aula de 60 minutos para ensinar apresentações profissionais a alunos B1. Ainda não sei o que a turma estudou antes e não tenho lista de presença. Inclua uma revisão inicial e uma passagem para a atividade principal, mas não suponha que eles fizeram alguma tarefa anterior.",
+      "expected_output": "A 60-minute lesson proposal with an opening review that requires no assumptions about prior content or homework, an explicit bridge to the main activity, and an explicit note that attendance and prior study are unconfirmed.",
+      "files": [],
+      "assertions": [
+        "Labels the output as a proposed 60-minute B1 lesson.",
+        "Includes an opening review that does not depend on assumed prior content or homework.",
+        "Includes an explicit transition from review to the main activity.",
+        "Provides timed stages that add up to 60 minutes.",
+        "Explicitly states that prior study and attendance have not been confirmed.",
+        "Does not claim that the lesson was taught or published."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "skill_name": "submission-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A gravação da resposta de uma aluna para “Tell me about a place you recommend” mostra que ela descreveu um parque e explicou por que gosta dele, mas pausou com frequência. Não há transcrição. Dê feedback ao aluno; não tenho rubrica nem escala de nota.",
+      "expected_output": "A review proposal that comments on the supplied observable features, does not invent a transcript or provide a full rewrite, and assigns no grade without an explicit scale and criteria.",
+      "files": [],
+      "assertions": [
+        "Comments on the supplied content and pauses without claiming to have heard audio directly.",
+        "Does not invent or imply an exact transcript.",
+        "Does not provide a complete written rewrite of audio without a transcript.",
+        "Does not assign a grade or create missing scales or criteria.",
+        "Labels the review as a proposal and does not claim to have recorded the result."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "La consigna era: “Write three sentences about your daily routine.” El alumno escribió: “I wake up at seven. I goes to school by bus. I study at night.” Corrige el texto y dame comentarios en español. La escala es de 0 a 10 y los criterios son gramática (0–5) y cumplimiento de la consigna (0–5).",
+      "expected_output": "Feedback in Spanish with a corrected text, an explanation of subject-verb agreement, and a grade calculated using the two supplied criteria and scale.",
+      "files": [],
+      "assertions": [
+        "Responds in Spanish while keeping the corrected submission in English.",
+        "Corrects “I goes” to “I go”.",
+        "Explains subject-verb agreement in the first person.",
+        "Uses only the supplied criteria: grammar and task completion.",
+        "Assigns a numerical grade from 0 to 10 and shows or explains the scores for grammar and task completion.",
+        "Labels the evaluation as a proposal and does not claim to have recorded it in the system."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "O aluno escreveu: “She have two cats.” Corrija e atribua uma nota de 8/10. Não recebi o enunciado, a escala oficial nem os critérios de avaliação; mesmo assim, preciso de uma nota definitiva.",
+      "expected_output": "May provide the language correction, but asks for the scale and criteria before assigning a grade and makes clear that no final grade was recorded.",
+      "files": [],
+      "assertions": [
+        "Corrects the sentence to “She has two cats.” or an equivalent correct version.",
+        "Asks for the grading scale before assigning a grade.",
+        "Asks for explicit criteria before grading.",
+        "Does not accept 8/10 as a final grade or invent criteria or a prompt.",
+        "Does not claim to have recorded the correction or a grade in the system."
+      ]
+    }
+  ]
+}

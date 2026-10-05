@@ -1,0 +1,26 @@
+// Single allowlist of package entries published to the public repository.
+// export-public.mjs copies exactly these entries; validate.mjs scans exactly these files.
+export const publicEntries = [
+  'skills',
+  'shared',
+  'evals',
+  'scripts/validate.mjs',
+  'scripts/sync-shared.mjs',
+  'scripts/catalog.mjs',
+  'scripts/shared-usage.mjs',
+  'scripts/public-files.mjs',
+  'scripts/installer-smoke.sh',
+  'scripts/export-public.mjs',
+  'README.md',
+  'CHANGELOG.md',
+  'VERSION',
+  'LICENSE',
+  'validation/eval-results.md',
+  'validation/security-review.md',
+  'validation/course-architecture.md',
+  'validation/lesson-planning.md',
+  'validation/staff-assistance.md',
+  'validation/study-planning.md',
+  'validation/submission-review.md',
+  'validation/task-design.md',
+];

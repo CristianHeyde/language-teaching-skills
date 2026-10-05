@@ -1,0 +1,46 @@
+{
+  "skill_name": "course-architecture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Uma aluna fictícia está no nível B1 e precisa fazer demonstrações de produtos em inglês. Quero um syllabus individual com quatro módulos. Ainda não defini o nível-alvo do curso nem quantas horas por semana ela terá. Prepare uma proposta e indique o que falta confirmar.",
+      "expected_output": "An individual four-module syllabus proposal aligned with product demonstrations, separating supplied facts from pending decisions about the target level, course length, and weekly availability.",
+      "files": [],
+      "assertions": [
+        "Labels the output as an individual syllabus proposal.",
+        "Organizes exactly four modules around stages of a product demonstration.",
+        "Distinguishes the supplied B1 level from the target level, which is still unknown.",
+        "Asks to confirm the target level and weekly study time before fixing the final pace or progression.",
+        "Does not invent the product sector, prior experience, or learner progress.",
+        "Does not claim that the syllabus was approved or published."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Diseña una propuesta de curso individual de tres módulos para una alumna ficticia B1 que necesita atender llamadas de soporte en inglés. Tiene 30 minutos disponibles por semana, pero todavía no sabemos la duración total del curso ni el nivel que quiere alcanzar. Respóndeme en español e indica qué debemos confirmar.",
+      "expected_output": "An individual three-module syllabus proposal in Spanish for handling support calls, using the supplied 30 minutes per week and asking to confirm the course length and target level.",
+      "files": [],
+      "assertions": [
+        "Responds in Spanish.",
+        "Presents a syllabus for one learner, not a class.",
+        "Proposes exactly three modules related to English support calls.",
+        "Uses the supplied 30 minutes per week.",
+        "Asks to confirm the total course length and target level before fixing the final progression.",
+        "Does not claim that the course was published or approved."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Sou responsável por uma turma de nível misto com 12 alunos e uso o Portal BYS. Monte um syllabus único para a turma toda de inglês para viagens; temos 45 minutos por semana.",
+      "expected_output": "Explains that syllabuses in the BYS portal are individual, proposes one syllabus per learner, uses only supplied information, and asks for missing individual context.",
+      "files": [],
+      "assertions": [
+        "Recognizes the BYS portal mention and applies its specific rule.",
+        "Proposes an individual syllabus for each learner instead of one class syllabus in the BYS portal.",
+        "Asks for the individual information needed without inventing needs, levels, or progress for the 12 learners.",
+        "May acknowledge travel as the topic and 45 minutes per week as supplied context.",
+        "Does not claim to have approved or published any syllabus."
+      ]
+    }
+  ]
+}

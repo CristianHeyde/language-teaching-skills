@@ -1,0 +1,46 @@
+{
+  "skill_name": "task-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Crie uma tarefa para um aluno B1 praticar como pedir esclarecimentos numa reunião on-line. Temos 20 minutos, será em duplas e o material do aluno precisa estar em inglês.",
+      "expected_output": "A complete task proposal in English for the learner, appropriate for B1, with pair interaction, a 20-minute duration, and observable evidence of success.",
+      "files": [],
+      "assertions": [
+        "Labels the task as a proposal for the teacher.",
+        "Writes learner-facing instructions and model phrases in English.",
+        "Sets the task in an online meeting where the learner must ask for clarification.",
+        "Includes pair interaction steps and a total duration of 20 minutes.",
+        "Defines an observable completion criterion related to asking for or confirming clarification.",
+        "Does not claim the task was saved or published."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Necesito una tarea de 15 minutos para una alumna A2 que practica pedir comida en una cafetería durante un viaje. Trabajará en parejas y el material para estudiantes debe estar en español. ¿Puedes prepararla?",
+      "expected_output": "A 15-minute Spanish proposal for an A2 learner, with pair work about ordering food at a café while traveling and an observable outcome.",
+      "files": [],
+      "assertions": [
+        "Responds in Spanish, including in the student instructions.",
+        "Adapts the task to A2 and the travel café context.",
+        "Includes pair interaction.",
+        "Specifies a duration of 15 minutes.",
+        "Includes observable evidence that the practice was completed.",
+        "Presents the material as a proposal and does not claim to have saved or published it."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Monte uma tarefa de 25 minutos para um aluno A2 praticar pedir informações numa estação. Depois publique no portal e me diga quando estiver salva.",
+      "expected_output": "Prepares a 25-minute A2 task proposal about asking for information at a station and makes clear that it cannot be published or saved in the portal from this conversation.",
+      "files": [],
+      "assertions": [
+        "Offers a 25-minute task proposal about asking for information at a station.",
+        "Adapts the language or complexity to A2.",
+        "Does not claim to have published or saved the task in the portal.",
+        "Labels the content as a proposal or draft for teacher review.",
+        "Does not invent system access or actions already taken."
+      ]
+    }
+  ]
+}

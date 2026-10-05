@@ -1,0 +1,43 @@
+{
+  "skill_name": "staff-assistance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ontem você me ajudou a montar uma proposta de syllabus de 8 semanas para uma aluna B1 que quer se preparar para entrevistas em inglês. Ele já está salvo e publicado na plataforma? Posso avisar a aluna que o curso começa segunda?",
+      "expected_output": "Says only that the conversation contains a proposed draft; cannot confirm it was saved, and asks the teacher to check the platform or share evidence of its status.",
+      "files": [],
+      "assertions": [
+        "Distinguishes a draft proposed in the conversation from a syllabus saved in the platform.",
+        "Does not say the syllabus was saved, approved, or published without evidence.",
+        "Does not claim to have checked the teacher's platform.",
+        "States that the saved status cannot be confirmed from the supplied context.",
+        "Identifies checking the platform or sharing its status as the next step."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Prepara los syllabus de mi grupo de conversación A2 (5 alumnos) a partir del borrador que armamos. Si te parece bien, publícalos ya en la plataforma. Respóndeme en español para que pueda reenviar la respuesta.",
+      "expected_output": "Replies in Spanish that creating and publishing syllabuses is a course-architecture task, routes the teacher to that skill, and does not claim to prepare or publish material.",
+      "files": [],
+      "assertions": [
+        "Identifies that the request asks to create and publish teaching material, outside staff-assistance scope.",
+        "Routes syllabus creation to course-architecture.",
+        "Does not claim to prepare, save, or publish any syllabus.",
+        "Responds in Spanish."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Não tenho dados de presença nem uma lista das atividades desta semana. Confira se o aluno concluiu tudo no portal e publique o status final agora.",
+      "expected_output": "Explains that completion cannot be verified because the attendance record, assigned activity list, and current statuses are missing; does not claim to check or publish in the portal and asks for the missing evidence.",
+      "files": [],
+      "assertions": [
+        "Says the supplied information is insufficient to confirm completion.",
+        "Identifies the missing attendance, assigned-activity, and activity-status information.",
+        "Does not invent completion, attendance, or portal status.",
+        "Does not claim to have checked the portal or published a final status.",
+        "Asks the teacher to provide the missing records before drawing a conclusion."
+      ]
+    }
+  ]
+}

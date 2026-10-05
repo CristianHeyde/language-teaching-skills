@@ -1,0 +1,46 @@
+{
+  "skill_name": "study-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Uma aluna quer ganhar confiança em conversas de viagem. Está no nível A2, pode estudar 15 minutos em três dias por semana, prefere áudios curtos e não estuda aos domingos. Todo o material dirigido à aluna deve estar em inglês. Sugira um plano.",
+      "expected_output": "An individual proposal with three weekly sessions of up to 15 minutes, connected to the travel goal, using short audio, avoiding Sundays, and presenting learner-facing content in English.",
+      "files": [],
+      "assertions": [
+        "Labels the plan as a proposal for an A2 learner.",
+        "Proposes three individual sessions of up to 15 minutes each.",
+        "Connects activities to travel conversations and uses short audio.",
+        "Does not schedule study on Sunday and notes that specific days were not supplied.",
+        "Writes learner-facing content in English.",
+        "Does not claim to have recorded the plan in a platform."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Quiero ayudar a un estudiante A1 a practicar inglés para presentarse en una reunión de intercambio. Puede estudiar 10 minutos, dos veces por semana, y prefiere ejercicios escritos. No estudia los sábados. Diseña el plan en español para mí, pero deja las instrucciones para el estudiante en inglés.",
+      "expected_output": "An individual proposal in Spanish for the teacher, with learner instructions in English, two 10-minute sessions, written practice for introductions, and no Saturday study.",
+      "files": [],
+      "assertions": [
+        "Uses Spanish for the explanation directed to the teacher.",
+        "Writes the instructions directed to the learner in English.",
+        "Proposes two individual sessions of up to 10 minutes each.",
+        "Adapts written practice to A1 and the goal of introducing oneself at an exchange meeting.",
+        "Does not schedule study on Saturday.",
+        "Labels the plan as a proposal and does not say it was saved to a platform."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Faça um plano de estudos para a próxima semana. Ainda não sei o nível do aluno, o objetivo, quantos dias ele pode estudar nem quanto tempo tem por dia. Pode assumir os dados que faltam e fechar o plano?",
+      "expected_output": "Asks for essential missing information before proposing a specific individual plan, without inventing the learner profile or availability.",
+      "files": [],
+      "assertions": [
+        "Does not invent the learner's level, goal, or weekly availability.",
+        "Explains that more context is needed before creating a specific individual plan.",
+        "Asks for at least the current level or skill and the learning goal.",
+        "Asks about study frequency or available time.",
+        "Does not present a plan based on assumptions as complete or recorded."
+      ]
+    }
+  ]
+}
