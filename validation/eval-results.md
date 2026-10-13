@@ -1,5 +1,14 @@
 # Eval results
 
+
+## 0.20.0 (2026-10-13)
+
+Targeted recheck on the four anonymized real portal cases where the teacher's material beat 0.19.0 in the second real-case round (two corrections, two tasks). Claude Sonnet answers, blind Claude grader, shuffled order, checking the specific failure modes.
+
+- task-design: 0.20.0 preferred in both cases. It builds on the recent lesson content and keeps the learner's real role (one 0.19.0 answer had turned the buyer into the supplier).
+- submission-review, iteration 1: 0.19.0 preferred in both; the learner part still treated optional items as errors and rewrote a correct sentence. Iteration 2 defined an error as a language mistake or an unmet requirement, kept optional items and style preferences in the teacher notes, and left correct sentences unchanged: 0.20.0 preferred in both (scores 5 vs 3 and 4 vs 2), with the word count right (137, recounted by the grader).
+
+Open miss: one acceptable expression ("very complete") was still flagged as an error. Four cases is a small sample; recheck in the next real-case round.
 ## 0.19.0
 
 Run on 2026-10-13 with the skill-creator method (Claude Sonnet answers, blind Claude grader, shuffled order). The submission-review cases gained assertions for the two-part output: a separated learner section with at most three priorities, each anchored by a before→after example.

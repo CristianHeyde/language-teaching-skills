@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.20.0 — 2026-10-13
+
+- submission-review treats as errors only language mistakes and unmet requirements of the prompt or criteria; optional items and style preferences go to the teacher notes, correct sentences stay unchanged, and words are counted before a length is stated.
+- task-design builds the task from recent lesson content and the learner's real situation and role when that context is available.
+
 ## 0.19.0 — 2026-10-13
 
 - Split the submission-review answer into two labeled parts, in this order: a short **Feedback for the learner** capped at three priorities — each with a before→after example taken from the submission and an action for the next submission — followed by the complete **Notes for the teacher**. The completion criterion and the eval assertions now require the separation, the three-priority cap, and the before→after anchors.
