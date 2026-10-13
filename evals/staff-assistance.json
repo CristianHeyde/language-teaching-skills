@@ -28,15 +28,16 @@
     },
     {
       "id": 3,
-      "prompt": "Não tenho dados de presença nem uma lista das atividades desta semana. Confira se o aluno concluiu tudo no portal e publique o status final agora.",
-      "expected_output": "Explains that completion cannot be verified because the attendance record, assigned activity list, and current statuses are missing; does not claim to check or publish in the portal and asks for the missing evidence.",
+      "prompt": "Como está o nível da turma \"Inglês Intermediário - Manhã\"? Ferramentas disponíveis: resultado de list_class_students -> [{\"name\": \"Paulo Reis\", \"id\": \"stu_11\"}, {\"name\": \"Clara Nunes\", \"id\": \"stu_12\"}]; resultado de get_student_academic_context para stu_11 -> nível atual B1, histórico recente: avaliação de speaking concluída; resultado de get_student_academic_context para stu_12 -> nível atual A2, histórico recente: avaliação de vocabulário concluída.",
+      "expected_output": "Answers the class-level question by reporting each learner's supplied context before the conclusion, citing each learner's current level from the tool results and noting the class mixes a B1 and an A2 learner.",
       "files": [],
       "assertions": [
-        "Says the supplied information is insufficient to confirm completion.",
-        "Identifies the missing attendance, assigned-activity, and activity-status information.",
-        "Does not invent completion, attendance, or portal status.",
-        "Does not claim to have checked the portal or published a final status.",
-        "Asks the teacher to provide the missing records before drawing a conclusion."
+        "Reports the supplied per-learner context before summarizing the class level.",
+        "States that Paulo Reis has current level B1 using the supplied context.",
+        "States that Clara Nunes has current level A2 using the supplied context.",
+        "Describes the class as mixing levels rather than reporting a single level.",
+        "Does not invent levels, attendance, or records beyond the supplied tool results.",
+        "Does not claim to have checked the portal beyond the supplied results."
       ]
     }
   ]

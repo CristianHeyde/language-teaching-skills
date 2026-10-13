@@ -31,16 +31,16 @@
     },
     {
       "id": 3,
-      "prompt": "Crie uma aula de 60 minutos para ensinar apresentações profissionais a alunos B1. Ainda não sei o que a turma estudou antes e não tenho lista de presença. Inclua uma revisão inicial e uma passagem para a atividade principal, mas não suponha que eles fizeram alguma tarefa anterior.",
-      "expected_output": "A 60-minute lesson proposal with an opening review that requires no assumptions about prior content or homework, an explicit bridge to the main activity, and an explicit note that attendance and prior study are unconfirmed.",
+      "prompt": "Planeje uma aula de 50 minutos para a turma \"Inglês Básico - Manhã\" sobre pedir comida em restaurante. Ferramentas disponíveis: resultado de get_lesson_design_context -> turma \"Inglês Básico - Manhã\", foco do curso: inglês para viagens, alunos: [{\"name\": \"Paula Nunes\", \"id\": \"stu_11\"}, {\"name\": \"Diego Salles\", \"id\": \"stu_12\"}, {\"name\": \"Igor Reis\", \"id\": \"stu_13\"}]; resultado de get_course_design_student_context -> stu_11: nível atual A2; stu_12: nível atual A1, reforçando vocabulário de comida; stu_13: nível atual A2.",
+      "expected_output": "A 50-minute lesson proposal that reports the supplied class and learner context before the plan, cites the current level of each of the three learners, adapts practice so the A1 learner can participate alongside the A2 learners, and includes timed stages and an observable check.",
       "files": [],
       "assertions": [
-        "Labels the output as a proposed 60-minute B1 lesson.",
-        "Includes an opening review that does not depend on assumed prior content or homework.",
-        "Includes an explicit transition from review to the main activity.",
-        "Provides timed stages that add up to 60 minutes.",
-        "Explicitly states that prior study and attendance have not been confirmed.",
-        "Does not claim that the lesson was taught or published."
+        "Reports the supplied class and learner context before presenting the lesson stages.",
+        "States the current level of each named learner: Paula Nunes (A2), Diego Salles (A1), and Igor Reis (A2).",
+        "Adapts the activity so the A1 learner can succeed alongside the A2 learners.",
+        "Keeps the focus on ordering food in a restaurant and uses the travel-English course focus.",
+        "Presents timed stages that add up to 50 minutes.",
+        "Labels the plan as a proposal and does not claim it was saved or taught."
       ]
     }
   ]

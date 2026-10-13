@@ -17,16 +17,16 @@
     },
     {
       "id": 2,
-      "prompt": "Quiero ayudar a un estudiante A1 a practicar inglés para presentarse en una reunión de intercambio. Puede estudiar 10 minutos, dos veces por semana, y prefiere ejercicios escritos. No estudia los sábados. Diseña el plan en español para mí, pero deja las instrucciones para el estudiante en inglés.",
-      "expected_output": "An individual proposal in Spanish for the teacher, with learner instructions in English, two 10-minute sessions, written practice for introductions, and no Saturday study.",
+      "prompt": "Monte uma proposta de plano de estudos para a aluna que busquei no portal. Ferramentas disponíveis: resultado de search_students -> [{\"name\": \"Beatriz Lemos\", \"id\": \"stu_07\"}]; resultado de get_student_academic_context para stu_07 -> nível atual A2, histórico recente: completou planos curtos de leitura, abandonou sessões longas de gramática. Ela pode estudar 15 minutos em três dias por semana e o material dela deve estar em inglês.",
+      "expected_output": "An individual plan proposal for Beatriz Lemos that cites her A2 level and recent history from the supplied tool results before presenting the plan, and adapts it to three weekly 15-minute sessions with learner-facing content in English.",
       "files": [],
       "assertions": [
-        "Uses Spanish for the explanation directed to the teacher.",
-        "Writes the instructions directed to the learner in English.",
-        "Proposes two individual sessions of up to 10 minutes each.",
-        "Adapts written practice to A1 and the goal of introducing oneself at an exchange meeting.",
-        "Does not schedule study on Saturday.",
-        "Labels the plan as a proposal and does not say it was saved to a platform."
+        "Cites the supplied learner context before presenting the study plan.",
+        "States that Beatriz Lemos has current level A2 using the supplied context.",
+        "Uses the supplied history to prefer short activities over long grammar sessions.",
+        "Proposes three individual sessions of up to 15 minutes each.",
+        "Writes learner-facing content in English.",
+        "Labels the plan as a proposal and does not claim it was saved to a platform."
       ]
     },
     {

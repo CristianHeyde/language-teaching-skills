@@ -12,10 +12,14 @@ A teacher supplies the prompt “Write a short message asking to move a meeting�
 
 **Corrected version:** “Hi Sam, I can’t make it at 3. Can we move it to 4?”
 
-**Feedback:** “Make it” sounds natural when saying you cannot attend at a particular time. In “move it to 4,” use “it” to refer to the meeting and “to” for the new time. Your message communicates the request clearly. No grade is assigned because no scale and criteria were provided.
+**Feedback for the learner:** One priority: natural phrasing for scheduling. Before: “I can’t join at 3.” → After: “I can’t make it at 3.” For your next message, use “make it” when you cannot attend at a particular time.
+
+**Notes for the teacher:** The message communicates the request clearly. The priority pattern is natural phrasing for scheduling: “make it” when you cannot attend at a particular time, and “move it to 4” with “it” for the meeting and “to” for the new time. Everything supplied could be evaluated. No grade is assigned because no scale and criteria were provided.
 
 Checklist:
 - [x] Preserves the meaning and offers a natural correction.
+- [x] Separates the learner feedback from the teacher notes.
+- [x] Keeps the learner part within three priorities, each with a before→after example from the submission.
 - [x] Explains the pronoun and preposition in plain language.
 - [x] Gives specific feedback aligned with the task.
 - [x] Does not invent a grade or rubric.

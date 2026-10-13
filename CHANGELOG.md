@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.19.0 — 2026-10-13
+
+- Split the submission-review answer into two labeled parts, in this order: a short **Feedback for the learner** capped at three priorities — each with a before→after example taken from the submission and an action for the next submission — followed by the complete **Notes for the teacher**. The completion criterion and the eval assertions now require the separation, the three-priority cap, and the before→after anchors.
+
+## 0.18.0 — 2026-10-13
+
+- Named `get_class_context` as the single class-context read in the portal references of task-design, submission-review, study-planning, staff-assistance, and lesson-planning: a request about a class now uses the consolidated class context (roster, current levels, active study plans, recent sessions, and tasks) instead of the roster plus per-learner context, while `get_student_academic_context` deepens an individual learner.
+
+## 0.17.0 — 2026-10-12
+
+- Added a shared rule that, when authenticated context tools are available, skills retrieve each learner's current level and recent history before creating, adapting, correcting, or planning, and cite that evidence or state what was missing.
+- Named the required context sequence in the portal references: for tasks, reviews, study plans, and staff questions, the class roster (when the request is about a class) followed by per-learner academic context; for lesson and course planning, the lesson design context for a class and the course design context for each learner, with academic context as a complement.
+- Added eval cases that supply simulated context-tool results and check that responses cite each learner's level and adapt the proposal.
+
 ## 0.16.0 — 2026-10-04
 
 - Clarified how to use connected teaching tools within their documented scope and moved draft, publication, and archiving procedures into the optional portal reference.

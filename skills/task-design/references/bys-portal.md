@@ -4,7 +4,7 @@ Use this guidance when the BYS MCP tools are available in the conversation, even
 
 ## Portal BYS (MCP)
 
-Use authenticated BYS MCP tools only within their documented scope. Use `list_my_classes` and `list_class_students` to identify an authorized class and roster; `get_student_academic_context` and `get_student_proficiency` provide relevant learner context.
+Use authenticated BYS MCP tools only within their documented scope. Before proposing a task, run `list_my_classes` to identify the authorized class and `get_class_context` for its roster, current levels, active study plans, recent sessions, and recent tasks; `get_student_academic_context` deepens an individual learner and `get_student_proficiency` adds proficiency history. Cite each learner's level evidence in the proposal or state what context was missing.
 
 ### Drafts and publication
 

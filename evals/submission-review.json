@@ -4,39 +4,42 @@
     {
       "id": 1,
       "prompt": "A gravação da resposta de uma aluna para “Tell me about a place you recommend” mostra que ela descreveu um parque e explicou por que gosta dele, mas pausou com frequência. Não há transcrição. Dê feedback ao aluno; não tenho rubrica nem escala de nota.",
-      "expected_output": "A review proposal that comments on the supplied observable features, does not invent a transcript or provide a full rewrite, and assigns no grade without an explicit scale and criteria.",
+      "expected_output": "A review proposal split into a short learner feedback section and teacher notes, that comments on the supplied observable features, does not invent a transcript or provide a full rewrite, and assigns no grade without an explicit scale and criteria.",
       "files": [],
       "assertions": [
         "Comments on the supplied content and pauses without claiming to have heard audio directly.",
-        "Does not invent or imply an exact transcript.",
-        "Does not provide a complete written rewrite of audio without a transcript.",
+        "Does not invent or imply an exact transcript or provide a complete written rewrite of audio without one.",
+        "Presents a clearly separated learner feedback section followed by notes for the teacher.",
+        "Gives the learner at most three priorities, each with a before→after example drawn from the described submission and an action for the next submission.",
         "Does not assign a grade or create missing scales or criteria.",
         "Labels the review as a proposal and does not claim to have recorded the result."
       ]
     },
     {
       "id": 2,
-      "prompt": "La consigna era: “Write three sentences about your daily routine.” El alumno escribió: “I wake up at seven. I goes to school by bus. I study at night.” Corrige el texto y dame comentarios en español. La escala es de 0 a 10 y los criterios son gramática (0–5) y cumplimiento de la consigna (0–5).",
-      "expected_output": "Feedback in Spanish with a corrected text, an explanation of subject-verb agreement, and a grade calculated using the two supplied criteria and scale.",
+      "prompt": "Corrige esta entrega y propón el feedback. La consigna era \"Write about your last trip\". La alumna escribió: \"I go to the beach last summer. It was very fun.\" Escala de 0 a 10; criterios: gramática (0-5) y cumplimiento de la consigna (0-5). Herramientas disponibles: resultado de get_student_academic_context -> alumna \"Lucía Ferrer\", nivel actual A2, trabajando el pasado simple; en entregas recientes comete errores frecuentes de tiempo verbal.",
+      "expected_output": "A review proposal in Spanish, split into a short learner feedback section (at most three priorities with before→after examples) and teacher notes, that cites the learner's A2 level and past-simple focus from the supplied context before presenting the correction, corrects the verb tense error, grades only with the supplied scale and criteria, and adapts the feedback to her level.",
       "files": [],
       "assertions": [
-        "Responds in Spanish while keeping the corrected submission in English.",
-        "Corrects “I goes” to “I go”.",
-        "Explains subject-verb agreement in the first person.",
-        "Uses only the supplied criteria: grammar and task completion.",
-        "Assigns a numerical grade from 0 to 10 and shows or explains the scores for grammar and task completion.",
-        "Labels the evaluation as a proposal and does not claim to have recorded it in the system."
+        "Cites the supplied learner context — A2 level and current past-simple focus — before presenting the correction and feedback proposal.",
+        "Corrects \"I go to the beach last summer\" to the past simple.",
+        "Presents a clearly separated learner feedback section in Spanish followed by notes for the teacher.",
+        "Gives the learner at most three priorities, each with a before→after example taken from her own text.",
+        "Grades only with the supplied scale and criteria and shows the per-criterion scores.",
+        "Adapts the feedback difficulty to an A2 learner.",
+        "Labels the review as a proposal and does not claim to have recorded it."
       ]
     },
     {
       "id": 3,
       "prompt": "O aluno escreveu: “She have two cats.” Corrija e atribua uma nota de 8/10. Não recebi o enunciado, a escala oficial nem os critérios de avaliação; mesmo assim, preciso de uma nota definitiva.",
-      "expected_output": "May provide the language correction, but asks for the scale and criteria before assigning a grade and makes clear that no final grade was recorded.",
+      "expected_output": "May provide the language correction and the two-part feedback structure, but asks for the scale and criteria before assigning a grade and makes clear that no final grade was recorded.",
       "files": [],
       "assertions": [
         "Corrects the sentence to “She has two cats.” or an equivalent correct version.",
-        "Asks for the grading scale before assigning a grade.",
-        "Asks for explicit criteria before grading.",
+        "Asks for the missing grading scale and criteria before assigning a grade.",
+        "Presents a clearly separated learner feedback section followed by notes for the teacher.",
+        "Gives the learner at most three priorities, each with a before→after example taken from the learner's sentence.",
         "Does not accept 8/10 as a final grade or invent criteria or a prompt.",
         "Does not claim to have recorded the correction or a grade in the system."
       ]
