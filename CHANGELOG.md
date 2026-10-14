@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.21.0 — 2026-10-14
+
+- Documented the `reviewDocument` contract in the submission-review and staff-assistance portal references: `revisedText` plus one `rangeComment` per relevant correction, anchored by a literal, unique `anchorText` copied from `revisedText`; `generalFeedback` does not replace range comments.
+
 ## 0.20.0 — 2026-10-13
 
 - submission-review treats as errors only language mistakes and unmet requirements of the prompt or criteria; optional items and style preferences go to the teacher notes, correct sentences stay unchanged, and words are counted before a length is stated.

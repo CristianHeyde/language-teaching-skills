@@ -29,3 +29,7 @@ Attendance writes require a read-write connection and an explicit request. Use `
 ## Student notebooks
 
 Notebook edits require a read-write connection and an explicit request. Use `request_student_note_update`, present the exact preview, obtain confirmation, then call `confirm_student_note_update`. The preview expires after five minutes and confirmation fails if the notebook changed. MCP refuses edits to external notebooks and exposes no notebook deletion tool.
+
+## Submission reviews
+
+Both `save_review_draft` and `request_review_publish` accept a `reviewDocument` object of the form `{ "revisedText": "We have completed our investigation into the issue. ...", "rangeComments": [{ "anchorText": "investigation into the issue", "body": "Use the fixed collocation “an investigation into an issue.” ..." }] }`. Write one `rangeComment` per relevant correction, in the language of the task, explaining the rule; `anchorText` must be a literal, unique excerpt copied from `revisedText`. `generalFeedback` does not replace range comments.

@@ -19,6 +19,7 @@ A teacher supplies the prompt “Write a short message asking to move a meeting�
 Checklist:
 - [x] Preserves the meaning and offers a natural correction.
 - [x] Separates the learner feedback from the teacher notes.
+- [ ] When saved to the BYS portal, each relevant correction becomes an anchored `rangeComment`; learner feedback goes to `generalFeedback` and teacher notes to `internalObservation` (not exercised in this standalone sample).
 - [x] Keeps the learner part within three priorities, each with a before→after example from the submission.
 - [x] Explains the pronoun and preposition in plain language.
 - [x] Gives specific feedback aligned with the task.
